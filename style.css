@@ -1,1 +1,43 @@
 /* #c09d4d , #f1ece5 , #d7be8b , #e1d0b3 , #e8dcc9 */
+body {
+    background-color: #d7be8b;
+}
+
+h1 {
+    text-align: center;
+    padding: 25px;
+    filter: drop-shadow(2px 2px 1px #c09d4d);
+    color: #e8dcc9;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+}
+
+h3{
+    color: #e8dcc9;
+    filter: drop-shadow(2px 2px 1px #c09d4d);
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 25px;
+}
+
+.form-floating {
+    padding-left: 25px;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.form-select {
+    background-color: #e8dcc9;
+    color: #c09d4d;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.form-control {
+        background-color: #e8dcc9;
+    color: #c09d4d;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
