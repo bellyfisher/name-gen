@@ -11,8 +11,17 @@ h1 {
     font-family: "Quintessential", serif;
     font-weight: 400;
 }
+h2 {
+    text-align: center;
+    padding: 25px;
+    filter: drop-shadow(2px 2px 1px #c09d4d);
+    color: #e8dcc9;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    animation-delay: 0.5s;
+}
 
-h3{
+h3 {
     color: #e8dcc9;
     filter: drop-shadow(2px 2px 1px #c09d4d);
   font-family: "Delius", cursive;
@@ -40,4 +49,22 @@ h3{
     width: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
+}
+
+.form {
+        background-color: #e8dcc9;
+    color: #c09d4d;
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.button {
+        text-align: center;
+}
+.btn-primary {
+    background-color: #e1d0b3;
+    color: #c09d4d;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
 }

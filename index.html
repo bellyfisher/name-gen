@@ -8,7 +8,10 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Delius&family=Quintessential&display=swap" rel="stylesheet">
@@ -27,31 +30,25 @@
         </header>
         <main>
             <h1>꧁ ༺ What is your medieval name? ༻ ꧂</h1>
+            <h2 class="animate__animated animate__fadeInDown">First, we should start with some questions!</h2>
+            <hr>
             <h3>What is your gender? ꨄ︎</h3>
 <div class="form-floating">
   <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-    <option selected>Select..</option>
+    <option selected></option>
     <option value="1">Male</option>
     <option value="2">Female</option>
   </select>
 </div>
 
 <h3>How old are you? ꨄ︎</h3>
-<div class="question">
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-  <label class="form-check-label" for="radioDefault1">
-    Male
-  </label>
+<div class="form-floating mb-3">
+  <input type="age" class="form-control" id="floatingInput" placeholder="567">
 </div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-  <label class="form-check-label" for="radioDefault2">
-    Female
-  </label>
-  </div>
+<div class="button">
+<button type="button" class="btn btn-primary btn-lg">Generate My Name!</button>
 </div>
-        </main>
+</main>
         <footer>
             <!-- place footer here -->
         </footer>
