@@ -32,20 +32,24 @@
             <h1>꧁ ༺ What is your medieval name? ༻ ꧂</h1>
             <h2 class="animate__animated animate__fadeInDown">First, we should start with some questions!</h2>
             <hr>
-            <h3>What is your gender? ꨄ︎</h3>
+<label for="q1" class="form-label fw-semibold">What is your gender? ꨄ︎</label>
 <div class="form-floating">
-  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+  <select class="form-select" id="q1" aria-label="Floating label select example">
     <option selected></option>
     <option value="1">Male</option>
     <option value="2">Female</option>
   </select>
 </div>
+<!-- <div class = "mb-3 slidecontainer">
+    <div class = "headerfont">How Happy Are You?</div>
+    <input type="range" min="1" max="10" value="5" class="slider" id="happinessRange">
+</div> -->
 
-<h3>How old are you? ꨄ︎</h3>
+<label for="q2" class="form-label fw-semibold">How old are you? ꨄ︎</label>
 <div class="form-floating mb-3">
-  <input type="age" class="form-control" id="floatingInput" placeholder="567">
+  <input type="age" class="form-control" id="q2" placeholder="567">
 </div>
-<div class="button">
+<div id="button">
 <button type="button" class="btn btn-primary btn-lg">Generate My Name!</button>
 </div>
 </main>
