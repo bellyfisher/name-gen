@@ -40,15 +40,30 @@
     <option value="2">Female</option>
   </select>
 </div>
-<!-- <div class = "mb-3 slidecontainer">
-    <div class = "headerfont">How Happy Are You?</div>
-    <input type="range" min="1" max="10" value="5" class="slider" id="happinessRange">
-</div> -->
 
 <label for="q2" class="form-label fw-semibold">How old are you? ꨄ︎</label>
 <div class="form-floating mb-3">
   <input type="age" class="form-control" id="q2" placeholder="567">
 </div>
+
+<div class = "mb-3 slidecontainer">
+<label for="q3" class="form-label fw-semibold">How happy are you <i>right now?</i> ꨄ︎</label>
+<br>
+<input type="range" class="form-range" min="0" max="5" step="0.5" id="q3">
+</div>
+
+
+<label for="q4" class="form-label fw-semibold">What state/country do you live in? ꨄ︎</label>
+<div class="form-floating mb-3">
+  <input type="place" class="form-control" id="q4" placeholder="State OR Country..">
+</div>
+
+<label for="q5" class="form-label fw-semibold">What is your FIRST name? ꨄ︎</label>
+<div class="form-floating mb-3">
+  <input type="place" class="form-control" id="q5" placeholder="Name">
+</div>
+
+
 <div id="button">
 <button type="button" class="btn btn-primary btn-lg">Generate My Name!</button>
 </div>

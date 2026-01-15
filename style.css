@@ -67,6 +67,8 @@ h2 {
     color: #c09d4d;
     font-family: "Quintessential", serif;
     font-weight: 400;
+    border-color: #f1ece5;
+    border-width: 1.5px;
 }
 
 .btn-primary:hover {
@@ -74,4 +76,13 @@ h2 {
     color: #e8dcc9;
     font-family: "Quintessential", serif;
     font-weight: 400;
+    border-color: #f1ece5;
+    border-width: px;
+}
+
+
+.form-range {
+    padding-left: 25px;
+    width: 200px;
+
 }
