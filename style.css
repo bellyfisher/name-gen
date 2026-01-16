@@ -11,6 +11,7 @@ h1 {
     font-family: "Quintessential", serif;
     font-weight: 400;
 }
+
 h2 {
     text-align: center;
     padding: 25px;
@@ -19,6 +20,13 @@ h2 {
     font-family: "Quintessential", serif;
     font-weight: 400;
     animation-delay: 0.5s;
+}
+
+hr {
+    border: none;
+    border-style: dashed;
+    height: 4px;
+    color: #c09d4d;
 }
 
 .form-label {
@@ -61,28 +69,39 @@ h2 {
 
 #button {
         text-align: center;
+        padding: 50px;
 }
+
+.form-range {
+      padding-left: 25px;
+    width: 250px;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: #e1d0b3;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background-color: #c09d4d;
+}
+
+
 .btn-primary {
+    background-color: #c09d4d;
+    color: #e1d0b3;
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    border-color: #e1d0b3;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.btn-primary:hover {
     background-color: #e1d0b3;
     color: #c09d4d;
     font-family: "Quintessential", serif;
     font-weight: 400;
-    border-color: #f1ece5;
-    border-width: 1.5px;
+    border-color: #d2af26;
+    border-width: 2px;
 }
 
-.btn-primary:hover {
-    background-color: #c09d4d;
-    color: #e8dcc9;
-    font-family: "Quintessential", serif;
-    font-weight: 400;
-    border-color: #f1ece5;
-    border-width: px;
-}
-
-
-.form-range {
-    padding-left: 25px;
-    width: 200px;
-
-}
