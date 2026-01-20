@@ -29,6 +29,21 @@ hr {
     color: #c09d4d;
 }
 
+.card{
+    border-radius: 28px;
+    background: linear-gradient(180deg, #d7be8b 0%, #e8dcc9 100%);
+    border: 1px solid #d2af26;
+    max-width:720px;
+    margin: 1rem auto;
+    box-shadow: 0 8px 24px #e8dcc9;
+}
+
+.card-body{
+    padding: 2rem;
+    border-radius: 28px;
+    color: #e1d0b3;
+}
+
 .form-label {
     color: #e8dcc9;
     filter: drop-shadow(2px 2px 1px #c09d4d);
@@ -78,7 +93,7 @@ hr {
 }
 
 .form-range::-webkit-slider-thumb {
-    background-color: #e1d0b3;
+    background-color: #e8dcc9;
 }
 
 .form-range::-webkit-slider-runnable-track {
