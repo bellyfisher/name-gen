@@ -1,50 +1,41 @@
-// Get form inputs
-let firstName = document.getElementById('q1').value;
-let middleName = document.getElementById('q2').value;
-let lastName = document.getElementById('q3').value;
-let suffixInput = document.getElementById('q4').value;
+document.getElementById("generateBtn").addEventListener("click", generateName);
 
-let prefix = '';
-let suffix = '';
+function generateName() {
+    // Get values from inputs
+    const gender = document.getElementById("q1").value;
+    const age = document.getElementById("q2").value;
+    const happiness = document.getElementById("q3").value;
+    const place = document.getElementById("q4").value;
+    const firstName = document.getElementById("q5").value;
+    const lastName = document.getElementById("q6").value;
 
-// Determine prefix based on input
-if (firstName) {
-    prefix = firstName;
-    if (middleName) {
-        prefix = firstName + ' ' + middleName;
+    // Basic validation
+    if (!firstName || !lastName) {
+        document.getElementById("result").textContent =
+            "Please enter your first and last name!";
+        return;
     }
-} else if (middleName) {
-    prefix = middleName;
-} else if (lastName) {
-    prefix = lastName;
-}
 
-// Determine suffix based on input
-if (suffixInput === 'jr') {
-    suffix = 'Jr.';
-} else if (suffixInput === 'sr') {
-    suffix = 'Sr.';
-} else if (suffixInput === 'iii') {
-    suffix = 'III';
-} else if (suffixInput === 'ii') {
-    suffix = 'II';
-} else if (suffixInput) {
-    suffix = suffixInput;
-}
+    // Prefix based on gender & age
+    let title = 'q1' + 'q2'
+    if (gender === "1" && age <= 18) {
+        title = "Prince";
+    } else if (gender === "2" && age <= 18) {
+        title = "Princess";
+    } else  if (gender === "1" && age > 18){
+        title = "King";
+    }
+    else {
+        title = "Queen";
+    }
 
-// Combine prefix and suffix
-let fullName = '';
-if (prefix && suffix) {
-    fullName = prefix + ' ' + suffix;
-} else if (prefix) {
-    fullName = prefix;
-} else if (suffix) {
-    fullName = suffix;
-}
+    // Descriptor based on happiness
+    let descriptor = "";
+    if (happiness <= 1) descriptor = "the gloomy";
+    else if (happiness <= 3) descriptor = "the steady";
+    else descriptor = "the lovely";
 
-// Display result
-if (fullName) {
-    document.getElementById('result').textContent = fullName;
-} else {
-    document.getElementById('result').textContent = 'Please enter a name';
+    // Build and display the royal name
+    let fullName = `${title} ${firstName} ${lastName} of ${descriptor} ${place}`;
+    document.getElementById("result").textContent = fullName;
 }

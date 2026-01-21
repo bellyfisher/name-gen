@@ -65,6 +65,7 @@ hr {
     width: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
+    border-radius: 5px;
 }
 .form-control {
         background-color: #e8dcc9;
@@ -72,6 +73,7 @@ hr {
     width: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
+    border-radius: 5px;
 }
 
 .form {
@@ -80,6 +82,7 @@ hr {
     width: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
+    border-radius: 5px;
 }
 
 #button {
