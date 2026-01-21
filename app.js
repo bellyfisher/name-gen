@@ -1,14 +1,50 @@
-let prefix = getElementByID('q1' + 'q3');
+// Get form inputs
+let firstName = document.getElementById('q1').value;
+let middleName = document.getElementById('q2').value;
+let lastName = document.getElementById('q3').value;
+let suffixInput = document.getElementById('q4').value;
 
-/* firstName
-middleName
-lastName */
+let prefix = '';
+let suffix = '';
 
-let suffix = getElementByID('q4');
-if {
-    
+// Determine prefix based on input
+if (firstName) {
+    prefix = firstName;
+    if (middleName) {
+        prefix = firstName + ' ' + middleName;
+    }
+} else if (middleName) {
+    prefix = middleName;
+} else if (lastName) {
+    prefix = lastName;
 }
 
-let fullName = prefix + ' ' + suffix;
+// Determine suffix based on input
+if (suffixInput === 'jr') {
+    suffix = 'Jr.';
+} else if (suffixInput === 'sr') {
+    suffix = 'Sr.';
+} else if (suffixInput === 'iii') {
+    suffix = 'III';
+} else if (suffixInput === 'ii') {
+    suffix = 'II';
+} else if (suffixInput) {
+    suffix = suffixInput;
+}
 
-display(fullName);
+// Combine prefix and suffix
+let fullName = '';
+if (prefix && suffix) {
+    fullName = prefix + ' ' + suffix;
+} else if (prefix) {
+    fullName = prefix;
+} else if (suffix) {
+    fullName = suffix;
+}
+
+// Display result
+if (fullName) {
+    document.getElementById('result').textContent = fullName;
+} else {
+    document.getElementById('result').textContent = 'Please enter a name';
+}
