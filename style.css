@@ -1,13 +1,13 @@
 /* #c09d4d , #f1ece5 , #d7be8b , #e1d0b3 , #e8dcc9 */
 body {
-    background-color: #d7be8b;
+    background: linear-gradient(180deg, #4e8bb7 0%, #d4e6f5 100%);
 }
 
 h2 {
     text-align: center;
     padding: 25px;
-    filter: drop-shadow(2px 2px 1px #c09d4d);
-    color: #e8dcc9;
+    filter: drop-shadow(2px 2px 1px #a7c6dc);
+    color: #4e8bb7;
     font-family: "Quintessential", serif;
     font-weight: 400;
 }
@@ -15,8 +15,8 @@ h2 {
 h3 {
     text-align: center;
     padding: 25px;
-    filter: drop-shadow(2px 2px 1px #c09d4d);
-    color: #e8dcc9;
+    filter: drop-shadow(2px 2px 1px #a7c6dc);
+    color: #4e8bb7;
     font-family: "Quintessential", serif;
     font-weight: 400;
     animation-delay: 0.5s;
@@ -26,27 +26,27 @@ hr {
     border: none;
     border-style: dashed;
     height: 4px;
-    color: #c09d4d;
+    color: #4e8bb7;
 }
 
 .card{
     border-radius: 28px;
-    background: linear-gradient(180deg, #d7be8b 0%, #e8dcc9 100%);
-    border: 1px solid #d2af26;
+    background: #d4e6f5;
+    border: 1px solid #80a8c6;
     max-width:720px;
     margin: 1rem auto;
-    box-shadow: 0 8px 24px #e8dcc9;
+    box-shadow: 0 8px 24px #edf4fb;
 }
 
 .card-body{
     padding: 2rem;
-    border-radius: 28px;
-    color: #e1d0b3;
+    border-radius: 56px;
+    color: #edf4fb;
 }
 
 .form-label {
-    color: #e8dcc9;
-    filter: drop-shadow(2px 2px 1px #c09d4d);
+    color: #edf4fb;
+    filter: drop-shadow(2px 2px 1px #4e8bb7);
   font-family: "Delius", cursive;
   font-weight: 400;
   font-style: normal;
@@ -60,29 +60,32 @@ hr {
     margin-bottom: 25px;
 }
 .form-select {
-    background-color: #e8dcc9;
-    color: #c09d4d;
+    background-color: #edf4fb;
+    color: #4e8bb7;
     width: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
-    border-radius: 5px;
+    border-width: 2.5px;
+    border-color: #4e8bb7;
 }
 .form-control {
-        background-color: #e8dcc9;
-    color: #c09d4d;
+        background-color: #edf4fb;
+    color: #4e8bb7;
     width: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
-    border-radius: 5px;
+    border-width: 2.5px;
+    border-color: #4e8bb7;
 }
 
 .form {
-        background-color: #e8dcc9;
-    color: #c09d4d;
+        background-color: #edf4fb;
+    color: #4e8bb7;
     width: 200px;
     margin-top: 15px;
     margin-bottom: 25px;
-    border-radius: 5px;
+    border-width: 2.5px;
+    border-color: #4e8bb7;
 }
 
 #button {
@@ -96,30 +99,47 @@ hr {
 }
 
 .form-range::-webkit-slider-thumb {
-    background-color: #e8dcc9;
+    background-color: #edf4fb;
 }
 
 .form-range::-webkit-slider-runnable-track {
-    background-color: #c09d4d;
+    background-color: #4e8bb7;
 }
 
 
 .btn-primary {
-    background-color: #c09d4d;
-    color: #e1d0b3;
+    background-color: #4e8bb7;
+    color: #edf4fb;
     font-family: "Quintessential", serif;
     font-weight: 400;
-    border-color: #e1d0b3;
+    border-color: #edf4fb;
     border-width: 2px;
     border-style: dashed;
 }
 
 .btn-primary:hover {
-    background-color: #e1d0b3;
-    color: #c09d4d;
+    background-color: #edf4fb;
+    color: #4e8bb7;
     font-family: "Quintessential", serif;
     font-weight: 400;
-    border-color: #d2af26;
+    border-color: #80a8c6;
     border-width: 2px;
+}
+
+#result {
+    padding: 50px;
+    display: none;
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+footer {
+      font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+    padding: 50px;
+    background: linear-gradient(180deg, #d4e6f5 0%, #4e8bb7 100%);
+    color: #edf4fb;
+    text-align: center;
 }
 

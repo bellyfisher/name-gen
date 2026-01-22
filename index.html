@@ -34,6 +34,9 @@
                             <div class="card-body">
                                 <h2 id="cardTitle" class="card-title">꧁ ༺ What is your medieval name? ༻ ꧂</h2>
             <h3 class="animate__animated animate__fadeInDown">First, we should start with some questions!</h3>
+            <div class="mt-4 text-center">
+  <h3 class = "animate__animated animate__zoomIn" id="result">${title} ${firstName} ${lastName} of ${descriptor} ${place}</h3>
+</div>
             <hr>
 <label for="q1" class="form-label fw-semibold">What is your gender? ꨄ︎</label>
 <div class="form-floating">
@@ -78,23 +81,21 @@
 <hr>
 
 <div id="button">
-<button type="button" class="btn btn-primary btn-lg" id="generateBtn">Generate Your Name!</button>
+<button type="button" class="btn btn-primary btn-lg" id="generateBtn" href="#result">Generate Your Name!</button>
 </div>
 
-<div class="mt-4 text-center">
-  <h3 id="result">${title} ${firstName} ${lastName} of ${descriptor} ${place}</h3>
-</div>
 </main>
         <footer>
-            <!-- place footer here -->
+            <h4>To operate this website, you must answer all of the shown questions to your best ability, and with the provided answers, this website will generate a royalty-inspired name for you!</h4>
+            <hr>
+            <h4>© Belly Cubley, WDPP2, 2026 ♡</h4>
         </footer>
-        <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"
         ></script>
-
+          <script src="app.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
